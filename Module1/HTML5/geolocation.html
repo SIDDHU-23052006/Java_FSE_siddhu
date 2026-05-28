@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocation</title>
+
+    <script>
+
+        function findLocation(){
+
+            navigator.geolocation.getCurrentPosition(
+                success,
+                error,
+                {
+                    enableHighAccuracy:true,
+                    timeout:5000
+                }
+            );
+        }
+
+        function success(position){
+
+            document.getElementById("location").innerHTML =
+            "Latitude : " + position.coords.latitude +
+            "<br>Longitude : " + position.coords.longitude;
+        }
+
+        function error(){
+
+            alert("Unable to get location");
+        }
+
+    </script>
+</head>
+<body>
+
+<button onclick="findLocation()">
+    Find Nearby Events
+</button>
+
+<p id="location"></p>
+
+</body>
+</html>
