@@ -1,0 +1,15 @@
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+h1{
+    font-size:40px;
+    font-weight:bold;
+}
+
+.description{
+    text-align:justify;
+    text-transform:capitalize;
+    letter-spacing:2px;
+    line-height:1.8;
+}

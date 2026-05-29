@@ -1,0 +1,24 @@
+a:link{
+    color:blue;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:green;
+}
+
+a:visited{
+    color:purple;
+}
+
+.nav{
+    list-style:none;
+}
+
+.nav li{
+    padding:10px;
+    margin:5px;
+}
