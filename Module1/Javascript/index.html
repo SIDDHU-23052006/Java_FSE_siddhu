@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:20px;
+            color:#333;
+        }
+
+        .container{
+            max-width:1000px;
+            margin:auto;
+        }
+
+        .card{
+            background:white;
+            padding:15px;
+            margin:15px 0;
+            border-radius:8px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        button{
+            padding:10px 15px;
+            border:none;
+            background:#007bff;
+            color:white;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+
+        input, select{
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        #error{
+            color:red;
+            font-size:14px;
+        }
+
+        #eventCard{
+            display:none;
+            background:#dff0d8;
+            padding:15px;
+            margin-top:10px;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Local Community Event Portal</h1>
+
+    <!-- Event Controls -->
+    <div class="card">
+        <h2>Event Actions</h2>
+
+        <button id="registerBtn">
+            Register Event
+        </button>
+
+        <br><br>
+
+        <label>Filter By Category</label>
+        <select id="categoryFilter">
+            <option value="">Select Category</option>
+            <option value="Music">Music</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Dance">Dance</option>
+        </select>
+
+        <label>Search Event</label>
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="Type event name..."
+        >
+    </div>
+
+    <!-- Dynamic Events -->
+    <div class="card">
+        <h2>Upcoming Events</h2>
+        <div id="eventContainer"></div>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="card">
+        <h2>Registration Form</h2>
+
+        <form id="registrationForm">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter Name"
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter Email"
+            >
+
+            <select name="event">
+                <option value="Music Fest">
+                    Music Fest
+                </option>
+
+                <option value="Baking Workshop">
+                    Baking Workshop
+                </option>
+
+                <option value="Dance Show">
+                    Dance Show
+                </option>
+            </select>
+
+            <button type="submit">
+                Submit Registration
+            </button>
+
+        </form>
+
+        <p id="error"></p>
+    </div>
+
+    <!-- jQuery Demo Card -->
+    <div id="eventCard">
+        Welcome to Community Event Portal
+    </div>
+
+</div>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Uncomment ONE JS file at a time while testing -->
+
+<!-- <script src="communityPortalSetup.js"></script> -->
+<script src="eventDetailsDataTypes.js"></script>
+<!-- <script src="eventValidationAndRegistration.js"></script>
+<script src="eventFunctionsAndClosures.js"></script>
+<script src="eventObjectsAndPrototypes.js"></script>
+<script src="eventArrayOperations.js"></script>
+<script src="dynamicEventDisplay.js"></script>
+<script src="eventInteractions.js"></script>
+<script src="asyncEventFetcher.js"></script>
+<script src="modernJavaScriptFeatures.js"></script>
+<script src="registrationFormHandler.js"></script>
+<script src="ajaxRegistrationSystem.js"></script>
+<script src="eventPortalDebugging.js"></script>
+<script src="jqueryCommunityPortal.js"></script> -->
+
+
+</body>
+</html>
